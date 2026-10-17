@@ -159,16 +159,27 @@ Tests were run both as Remix unit tests (`tests/LostAndFound_test.sol`) and manu
 ### 5.3 Screenshots 
 
 ▪ Smart contract compilation
+
 ![](./Screenshots/img1.png)
+
 ▪ Smart contract deployment
+
 ![](./Screenshots/img2.png)
+
 ▪ MetaMask wallet connection
+
 ![](./Screenshots/img4.png)
+
 ▪ Successful transaction
+
 ![](./Screenshots/img5.png)
+
 ▪ Failed transaction
+
 ![](./Screenshots/img6.png)
+
 ▪ Blockchain data displayed through the user interface
+
 ![](./Screenshots/img7.png)
     
 
