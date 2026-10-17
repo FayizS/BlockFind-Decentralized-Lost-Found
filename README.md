@@ -95,12 +95,7 @@ npm run dev
 
 The app opens at **http://localhost:3000**.
 
-### Optional: Local testing with Ganache
 
-1. Start Ganache (`npx ganache --chain.chainId 1337 --port 7545` or the desktop app).
-2. Add a custom network in MetaMask: RPC `http://127.0.0.1:7545`, Chain ID `1337`, symbol `ETH`.
-3. Import two Ganache accounts into MetaMask (needed for the unauthorized test).
-4. Deploy from Remix using the Ganache network and update `CONTRACT_ADDRESS`.
 
 ---
 
