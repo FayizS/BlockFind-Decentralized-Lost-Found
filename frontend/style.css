@@ -1,0 +1,20 @@
+:root { --bg:#f5f7fb; --card:#fff; --ink:#1b2430; --accent:#4f46e5; --ok:#16a34a; --bad:#dc2626; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--ink); }
+header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
+  padding:14px 24px; background:var(--card); box-shadow:0 1px 4px #0001; }
+h1 { font-size:1.3rem; margin:0; }
+main { max-width:760px; margin:24px auto; padding:0 16px; }
+.card, .item { background:var(--card); padding:16px; border-radius:10px; box-shadow:0 1px 4px #0001; margin-bottom:14px; }
+input, textarea, select { width:100%; padding:10px; margin:6px 0; border:1px solid #cbd5e1; border-radius:6px; font:inherit; }
+button { background:var(--accent); color:#fff; border:0; padding:10px 16px; border-radius:6px; cursor:pointer; font:inherit; }
+button:disabled { opacity:.5; cursor:not-allowed; }
+button.small { padding:4px 10px; font-size:.8rem; margin-left:8px; }
+#account { margin-right:10px; font-family:monospace; font-size:.85rem; }
+.warn { background:#fef3c7; padding:10px; border-radius:6px; }
+#status { min-height:1.4em; margin:8px 0; }
+#status.err { color:var(--bad); } #status.ok { color:var(--ok); }
+.badge { display:inline-block; padding:2px 8px; border-radius:99px; font-size:.75rem; color:#fff; margin-right:6px; }
+.lost { background:var(--bad); } .found { background:var(--ok); } .rec { background:#64748b; }
+.meta { font-size:.8rem; color:#64748b; margin:6px 0; word-break:break-all; }
+.item.done { opacity:.6; }

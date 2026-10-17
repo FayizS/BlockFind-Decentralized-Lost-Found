@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Lost & Found DApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎒 Campus Lost &amp; Found</h1>
+    <div>
+      <span id="account"></span>
+      <button id="connectBtn">Connect MetaMask</button>
+    </div>
+  </header>
+
+  <main>
+    <p class="warn">⚠️ Blockchain data is public. Never post phone numbers, addresses or ID card numbers.</p>
+    <div id="status"></div>
+
+    <section class="card">
+      <h2>Report an item</h2>
+      <input id="name" placeholder="Item name (e.g. Blue wallet)" maxlength="100" />
+      <textarea id="desc" placeholder="Description (no personal details)" maxlength="300"></textarea>
+      <input id="loc" placeholder="Location (e.g. Library, 2nd floor)" maxlength="100" />
+      <select id="kind">
+        <option value="lost">I LOST this item</option>
+        <option value="found">I FOUND this item</option>
+      </select>
+      <button id="submitBtn">Submit report (transaction)</button>
+    </section>
+
+    <section>
+      <h2>Reports <button id="refreshBtn" class="small">Refresh</button></h2>
+      <div id="items"></div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
